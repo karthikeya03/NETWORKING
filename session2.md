@@ -21,17 +21,64 @@
 
 ## 3.Protocol Suite :
 
-**Table and Definitions:** :
+## OSI Model and TCP/IP Model :
+osi-> open systems ineterconnection 
 
-| Layer   | OSI Model    | TCP/IP Model   | Example Protocols |
-| ------- | ------------ | -------------- | ----------------- |
-| Layer 7 | Application  | Application    | HTTP, FTP, SMTP   |
-| Layer 6 | Presentation | -              | SSL, JPEG         |
-| Layer 5 | Session      | -              | NetBIOS, RPC      |
-| Layer 4 | Transport    | Transport      | TCP, UDP          |
-| Layer 3 | Network      | Internet       | IP, ICMP          |
-| Layer 2 | Data Link    | Network Access | Ethernet, PPP     |
-| Layer 1 | Physical     | Network Access | DSL, T1           |
+| Layer   | OSI Model    | TCP/IP Model   | Example Protocols | Data Unit |
+| ------- | ------------ | -------------- | ----------------- | --------- |
+| Layer 7 | Application  | Application    | HTTP, FTP, SMTP   | Data      |
+| Layer 6 | Presentation | -              | SSL, JPEG         | Data      |
+| Layer 5 | Session      | -              | NetBIOS, RPC      | Data      |
+| Layer 4 | Transport    | Transport      | TCP, UDP          | Segment   |
+| Layer 3 | Network      | Internet       | IP, ICMP          | Packet    |
+| Layer 2 | Data Link    | Network Access | Ethernet, PPP     | Frame     |
+| Layer 1 | Physical     | Network Access | DSL, T1           | Bits      |
+
+## Layer 7: Application (OSI) / Application (TCP/IP) :
+- **Purpose**: This layer interacts directly with user applications.
+- **Example Protocols**: 
+  - **HTTP (Hypertext Transfer Protocol)**: Used for transferring web pages on the internet.
+  - **FTP (File Transfer Protocol)**: Used for transferring files between a client and server.
+  - **SMTP (Simple Mail Transfer Protocol)**: Used for sending emails.
+
+## Layer 6: Presentation (OSI) :
+- **Purpose**: This layer translates data between the application layer and the network.
+- **Example Protocols**: 
+  - **SSL (Secure Sockets Layer)**: Used for encrypting data for secure transmission.
+  - **JPEG (Joint Photographic Experts Group)**: Used for image compression.
+
+## Layer 5: Session (OSI) :
+- **Purpose**: This layer manages sessions between applications.
+- **Example Protocols**: 
+  - **NetBIOS (Network Basic Input/Output System)**: Used for network communication in older systems.
+  - **RPC (Remote Procedure Call)**: Used for executing code on a remote server.
+
+## Layer 4: Transport (OSI and TCP/IP) :
+- **Purpose**: This layer ensures reliable data transfer.
+- **Example Protocols**: 
+  - **TCP (Transmission Control Protocol)**: Ensures reliable, ordered delivery of data.
+  - **UDP (User Datagram Protocol)**: Provides faster, but less reliable delivery of data.
+  - sequence numbers are added by transport layer.
+
+## Layer 3: Network (OSI) / Internet (TCP/IP) :
+- **Purpose**: This layer handles routing of data between devices.
+- **Example Protocols**: 
+  - **IP (Internet Protocol)**: Responsible for addressing and routing packets of data.
+  - **ICMP (Internet Control Message Protocol)**: Used for error messages and operational information.
+
+## Layer 2: Data Link (OSI) / Network Access (TCP/IP) :
+- **Purpose**: This layer handles error detection and correction from the physical layer.
+- **Example Protocols**: 
+  - **Ethernet**: Used for wired local area networks.
+  - **PPP (Point-to-Point Protocol)**: Used for direct communication between two nodes.
+
+## Layer 1: Physical (OSI) / Network Access (TCP/IP) :
+- **Purpose**: This layer transmits raw bit streams over a physical medium.
+- **Example Protocols**: 
+  - **DSL (Digital Subscriber Line)**: Used for internet access over telephone lines.
+  - **T1**: A type of fiber optic telephone line that can handle more data than DSL lines.
+  - 1024 messages with trail goes to the physical
+    
 
 ## 4. Globalization  :
 
@@ -64,4 +111,6 @@
 - **netstat**: A command-line tool that displays network connections, routing tables, interface statistics, masquerade connections, and multicast memberships.
   - **Example**: `netstat -an` shows all active connections and listening ports.
  
-  
+
+
+
