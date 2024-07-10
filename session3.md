@@ -91,3 +91,42 @@ Imagine you have a home office setup with a desktop computer, a printer, and a r
 | Router         | Switch         | Straight-Through |
 | Router         | Computer       | Straight-Through |
 
+# Networking Device Notes
+
+## Hub
+
+- **Definition**: A hub is a basic networking device that connects multiple computers or other network devices together.
+- **Functionality**: 
+  - Broadcasts data to all connected devices.
+  - Operates using unidirectional communication.
+- **Example**: In a small home network, a hub might connect several computers, allowing them to share data.
+
+## Switch
+
+- **Definition**: A switch is a networking device that operates at the Data Link Layer (Layer 2) of the OSI model.
+- **Functionality**: 
+  - Directs data to specific devices by using MAC addresses.
+  - Supports unicasting, meaning it sends data only to the intended recipient.
+  - Typically operates in full duplex mode, allowing simultaneous sending and receiving of data.
+- **Example**: In a corporate network, a switch connects multiple computers within the same local area network (LAN), improving network efficiency and security.
+
+## Media Access Control (MAC) Address
+
+- **Definition**: A MAC address is a unique identifier assigned to network interfaces for communications at the Data Link Layer of a network.
+- **Functionality**: 
+  - Used by switches to identify devices and direct data appropriately.
+  - A 48-bit address, typically represented as six pairs of hexadecimal digits.
+- **Example**: A network card in a laptop has a MAC address that might look like `00:1A:2B:3C:4D:5E`.
+
+## Example Network Setup
+
+Imagine a small office network with the following setup:
+
+1. **Hub**: Connects older, less critical devices, broadcasting any received data to all devices.
+2. **Switch**: Connects modern, critical devices like computers and servers, directing data only to the intended recipient using MAC addresses.
+3. **Devices**: Each device, such as a computer or printer, has a unique MAC address used by the switch for efficient data delivery.
+   
+
+
+
+
