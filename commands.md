@@ -19,11 +19,9 @@
 | `switch`                              | Enters the user EXECUTION mode on a switch. This is the initial mode where basic commands can be executed. |
 | `enable`                              | Enters privileged EXEC mode from user EXEC mode. This mode allows access to more advanced commands.  |
 | `configure terminal`                  | Enters global configuration mode from privileged EXEC mode. This mode allows configuration of the switch. |
-| `interface fastEthernet 0/1`          | Enters interface configuration mode for FastEthernet interface 0/1. 
-                                          This mode allows configuration of the specific interface. |
+| `interface fastEthernet 0/1`          | Enters interface configuration mode for FastEthernet interface 0/1. This mode allows configuration of the specific interface. |
 | `int fa0/1`                           | Shortcut command to enter interface configuration mode for FastEthernet interface 0/1.   |
 | `shutdown`                            | Puts the specified interface into a shutdown state, disabling it from forwarding traffic.   |
-| `interface range fastEthernet 0/1-10` | Enters interface configuration mode for a range of FastEthernet interfaces from 0/1 to 0/10. Allows configuration of 
-                                          multiple interfaces at once. |
+| `interface range fastEthernet 0/1-10` | Enters interface configuration mode for a range of FastEthernet interfaces from 0/1 to 0/10. Allows configuration of multiple interfaces at once. |
 | `exit`                                | Exits the current configuration mode or privileged EXEC mode and returns to the previous mode.         |
 | `show ip interface brief`             | Displays a brief summary of the IP status and configuration of the interfaces on the switch.
