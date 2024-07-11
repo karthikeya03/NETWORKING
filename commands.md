@@ -15,7 +15,7 @@
 # Cisco IOS Command Explanations
 | Command                       | Description                                                                              |
 |-------------------------------|------------------------------------------------------------------------------------------|
-| `switch`                      | Enters the user EXEC mode on a switch. This is the initial mode where basic commands can be executed. |
+| `switch`                      | Enters the user EXECUTION mode on a switch. This is the initial mode where basic commands can be executed. |
 | `enable`                      | Enters privileged EXEC mode from user EXEC mode. This mode allows access to more advanced commands.  |
 | `configure terminal`          | Enters global configuration mode from privileged EXEC mode. This mode allows configuration of the switch. |
 | `exit`                        | Exits the current configuration mode or privileged EXEC mode and returns to the previous mode.         |
