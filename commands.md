@@ -13,10 +13,13 @@
 | `services.msc` | Opens the Services management console, which allows you to manage system services.  |
 
 # Cisco IOS Command Explanations
+
 | Command                       | Description                                                                              |
 |-------------------------------|------------------------------------------------------------------------------------------|
 | `switch`                      | Enters the user EXECUTION mode on a switch. This is the initial mode where basic commands can be executed. |
 | `enable`                      | Enters privileged EXEC mode from user EXEC mode. This mode allows access to more advanced commands.  |
 | `configure terminal`          | Enters global configuration mode from privileged EXEC mode. This mode allows configuration of the switch. |
+| `interface fastEthernet 0/1`  | Enters interface configuration mode for FastEthernet interface 0/1. This mode allows configuration of the specific interface. |
+| `int fa0/1`                   | Shortcut command to enter interface configuration mode for FastEthernet interface 0/1.   |
 | `exit`                        | Exits the current configuration mode or privileged EXEC mode and returns to the previous mode.         |
 | `show ip interface brief`     | Displays a brief summary of the IP status and configuration of the interfaces on the switch.           |
